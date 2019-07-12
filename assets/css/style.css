@@ -44,3 +44,22 @@ h2 {
     /* font-weight: 400; */
     color: #e6263c;
 }
+
+input[type="radio"]{
+    margin: 0px 30px 0px;  
+}
+
+#done {
+    margin-left: 390px;
+    margin-top: 50px;
+    background-color: #fcdb3f;
+    border: none;
+    color: #e6263c;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+/* #wrapper {
+    margin-left: 100px;
+    text-align: center;
+} */

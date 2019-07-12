@@ -47,14 +47,63 @@ $("#start").on("click", function () {
     run();
 
     //questions appear with 4 answer choices below
-    // $("#q1").html("<h3>" + questions[0].question + "</h3>");
+    $("#q1").html("<h3>" + questions[0].question + "</h3>");
     //only one answer can be chosen for each question
-    // $("#a1").html("<input type='radio' name='a1' value='0'>" + questions[0].answerOptions[0] +
-    // "<input type='radio' name='a1' value='1'>" + question[0].answerOptions[1] +
-    // "<input type='radio' name='a1' value='2'>" + question[0].answerOptions[2] +
-    // "<input type='radio' name='a1' value='3'>" + question[0].answerOptions[3]
-    //pressing done button ends game 
+    $("#a1").html("<input type='radio' name='a1' value='0'>" + questions[0].answerOptions[0] +
+    "<input type='radio' name='a1' value='1'>" + questions[0].answerOptions[1] +
+    "<input type='radio' name='a1' value='2'>" + questions[0].answerOptions[2] +
+    "<input type='radio' name='a1' value='3'>" + questions[0].answerOptions[3]
+    );
+
+    //repeat for following questions
+    $("#q2").html("<h3>" + questions[1].question + "</h3>");
+    $("#a2").html("<input type='radio' name='a1' value='0'>" + questions[1].answerOptions[0] +
+    "<input type='radio' name='a2' value='1'>" + questions[1].answerOptions[1] +
+    "<input type='radio' name='a2' value='2'>" + questions[1].answerOptions[2] +
+    "<input type='radio' name='a2' value='3'>" + questions[1].answerOptions[3]
+    );
+
+    $("#q3").html("<h3>" + questions[2].question + "</h3>");
+    $("#a3").html("<input type='radio' name='a3' value='0'>" + questions[2].answerOptions[0] +
+    "<input type='radio' name='a3' value='1'>" + questions[2].answerOptions[1] +
+    "<input type='radio' name='a3' value='2'>" + questions[2].answerOptions[2] +
+    "<input type='radio' name='a3' value='3'>" + questions[2].answerOptions[3]
+    );
+
+    $("#q4").html("<h3>" + questions[3].question + "</h3>");
+    $("#a4").html("<input type='radio' name='a4' value='0'>" + questions[2].answerOptions[0] +
+    "<input type='radio' name='a4' value='1'>" + questions[3].answerOptions[1] +
+    "<input type='radio' name='a4' value='2'>" + questions[3].answerOptions[2] +
+    "<input type='radio' name='a4' value='3'>" + questions[3].answerOptions[3]
+    );
+
+    $("#q5").html("<h3>" + questions[4].question + "</h3>");
+    $("#a5").html("<input type='radio' name='a5' value='0'>" + questions[4].answerOptions[0] +
+    "<input type='radio' name='a5' value='1'>" + questions[4].answerOptions[1] +
+    "<input type='radio' name='a5' value='2'>" + questions[4].answerOptions[2] +
+    "<input type='radio' name='a5' value='3'>" + questions[4].answerOptions[3]
+    );
+
+    $("#q6").html("<h3>" + questions[5].question + "</h3>");
+    $("#a6").html("<input type='radio' name='a6' value='0'>" + questions[5].answerOptions[0] +
+    "<input type='radio' name='a3' value='1'>" + questions[5].answerOptions[1] +
+    "<input type='radio' name='a3' value='2'>" + questions[5].answerOptions[2] +
+    "<input type='radio' name='a3' value='3'>" + questions[5].answerOptions[3]
+    );
+
+    $("#q7").html("<h3>" + questions[6].question + "</h3>");
+    $("#a7").html("<input type='radio' name='a7' value='0'>" + questions[6].answerOptions[0] +
+    "<input type='radio' name='a7' value='1'>" + questions[6].answerOptions[1] +
+    "<input type='radio' name='a7' value='2'>" + questions[6].answerOptions[2] +
+    "<input type='radio' name='a7' value='3'>" + questions[6].answerOptions[3]
+    );
+
+    //pressing submit button 
+    $("#submit").html("<button id='done'> Done </button>")
+
+    //clicking submit ends game
     //if timer runs out, game ends
+   
    
     //after done is pressed or timer runs out score is displayed
 
@@ -90,9 +139,7 @@ function decrement() {
         
     }
 
-    //exexcute the run function
-    // run();
-
+    
 
 
 
