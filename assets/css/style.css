@@ -41,6 +41,6 @@ body {
 h2 {
     text-align: center;
     font-family: 'Alfa Slab One';
-    font-weight: 400;
+    /* font-weight: 400; */
     color: #e6263c;
 }
