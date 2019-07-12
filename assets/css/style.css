@@ -46,7 +46,7 @@ h2 {
 }
 
 input[type="radio"]{
-    margin: 0px 30px 0px;  
+    margin: 0px 15px 0px;  
 }
 
 #done {
@@ -59,7 +59,33 @@ input[type="radio"]{
     font-size: 14px;
 }
 
-/* #wrapper {
-    margin-left: 100px;
+#wrapper {
     text-align: center;
-} */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#finishedMessage{
+    font-family: 'Notable', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#answersCorrect{
+    padding-bottom: 10px;
+}
+
+#answersIncorrect{
+    padding-bottom: 10px;
+}
+
+#notAnswered{
+    padding-bottom: 10px;
+}
+
+
