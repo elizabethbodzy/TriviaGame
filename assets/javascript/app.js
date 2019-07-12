@@ -1,5 +1,5 @@
 var time = 30;
-var timerRunning = false;
+// var timerRunning = false;
 
 var intervalId;
 
@@ -57,7 +57,7 @@ $("#start").on("click", function () {
 
     //repeat for following questions
     $("#q2").html("<h3>" + questions[1].question + "</h3>");
-    $("#a2").html("<input type='radio' name='a1' value='0'>" + questions[1].answerOptions[0] +
+    $("#a2").html("<input type='radio' name='a2' value='0'>" + questions[1].answerOptions[0] +
         "<input type='radio' name='a2' value='1'>" + questions[1].answerOptions[1] +
         "<input type='radio' name='a2' value='2'>" + questions[1].answerOptions[2] +
         "<input type='radio' name='a2' value='3'>" + questions[1].answerOptions[3]
@@ -86,9 +86,9 @@ $("#start").on("click", function () {
 
     $("#q6").html("<h3>" + questions[5].question + "</h3>");
     $("#a6").html("<input type='radio' name='a6' value='0'>" + questions[5].answerOptions[0] +
-        "<input type='radio' name='a3' value='1'>" + questions[5].answerOptions[1] +
-        "<input type='radio' name='a3' value='2'>" + questions[5].answerOptions[2] +
-        "<input type='radio' name='a3' value='3'>" + questions[5].answerOptions[3]
+        "<input type='radio' name='a6' value='1'>" + questions[5].answerOptions[1] +
+        "<input type='radio' name='a6' value='2'>" + questions[5].answerOptions[2] +
+        "<input type='radio' name='a6' value='3'>" + questions[5].answerOptions[3]
     );
 
     $("#q7").html("<h3>" + questions[6].question + "</h3>");
@@ -138,12 +138,12 @@ function displayTotal() {
 function countTotal() {
     //check value of box that was chosen/checked
     var userAnswer1 = $("input[name='a1']:checked").val();
-    var userAnswer2 = $("input[name='a1']:checked").val();
-    var userAnswer3 = $("input[name='a1']:checked").val();
-    var userAnswer4 = $("input[name='a1']:checked").val();
-    var userAnswer5 = $("input[name='a1']:checked").val();
-    var userAnswer6 = $("input[name='a1']:checked").val();
-    var userAnswer7 = $("input[name='a1']:checked").val();
+    var userAnswer2 = $("input[name='a2']:checked").val();
+    var userAnswer3 = $("input[name='a3']:checked").val();
+    var userAnswer4 = $("input[name='a4']:checked").val();
+    var userAnswer5 = $("input[name='a5']:checked").val();
+    var userAnswer6 = $("input[name='a6']:checked").val();
+    var userAnswer7 = $("input[name='a7']:checked").val();
 
     //if the answer that the user chooses is equal to the correct answer, add points to correct answer
     if (userAnswer1 === questions[0].correctAnswer) {
